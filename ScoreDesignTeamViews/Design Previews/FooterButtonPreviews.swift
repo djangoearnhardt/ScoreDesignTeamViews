@@ -88,22 +88,6 @@ struct ButtonView_Previews: PreviewProvider {
                     .environment(\.locale, locale)
                     .previewDisplayName("iPhone8 - " +  "\(Locale.current.localizedString(forIdentifier: locale.identifier)!)")
             }
-
-//            VStack {
-//                Spacer()
-//                ButtonView()
-//                    .frame(width: DeviceScreenSizes.iPhone5.deviceScreenSizes,height: (80 + FooterButton.FooterButtonLayout.height))
-//            }
-//            .previewDevice("iPhone SE")
-//            .previewDisplayName("iPhone SE")
-//
-//            VStack {
-//                Spacer()
-//                ButtonView()
-//                    .frame(height: (80 + FooterButton.FooterButtonLayout.height))
-//            }
-//            .previewDevice("iPhone 8")
-//            .previewDisplayName("iPhone 8")
         }
     }
 }
