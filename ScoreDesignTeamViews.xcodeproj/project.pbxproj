@@ -23,8 +23,10 @@
 		4241F7A3247729BB00BF1693 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241F7A2247729BB00BF1693 /* ColorExtensions.swift */; };
 		4241F7B42477479800BF1693 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4241F7B22477479800BF1693 /* Localizable.strings */; };
 		4241F7BA24774B8B00BF1693 /* FooterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241F7B924774B8B00BF1693 /* FooterButton.swift */; };
+		4249A70C247F18F30006E321 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249A70B247F18F30006E321 /* MainMenu.swift */; };
 		42BFD5FD2475F12300099454 /* FontPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFD5FC2475F12300099454 /* FontPreview.swift */; };
 		42BFD6082475FAE800099454 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BFD6072475FAE800099454 /* Fonts.swift */; };
+		42D2CA0E2480865D00BA0CAF /* MakeViewsWithTitleTextAndViewCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D2CA0D2480865D00BA0CAF /* MakeViewsWithTitleTextAndViewCount.swift */; };
 		42E2D0E12474B9ED00B4C5A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E2D0E02474B9ED00B4C5A0 /* AppDelegate.swift */; };
 		42E2D0E32474B9ED00B4C5A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E2D0E22474B9ED00B4C5A0 /* SceneDelegate.swift */; };
 		42E2D0E72474B9EF00B4C5A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E2D0E62474B9EF00B4C5A0 /* Assets.xcassets */; };
@@ -54,8 +56,10 @@
 		4241F7B72477497C00BF1693 /* am-ET */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "am-ET"; path = "am-ET.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		4241F7B82477497C00BF1693 /* am-ET */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "am-ET"; path = "am-ET.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4241F7B924774B8B00BF1693 /* FooterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterButton.swift; sourceTree = "<group>"; };
+		4249A70B247F18F30006E321 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		42BFD5FC2475F12300099454 /* FontPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPreview.swift; sourceTree = "<group>"; };
 		42BFD6072475FAE800099454 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		42D2CA0D2480865D00BA0CAF /* MakeViewsWithTitleTextAndViewCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeViewsWithTitleTextAndViewCount.swift; sourceTree = "<group>"; };
 		42E2D0DD2474B9ED00B4C5A0 /* ScoreDesignTeamViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreDesignTeamViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E2D0E02474B9ED00B4C5A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42E2D0E22474B9ED00B4C5A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				42E2D0E22474B9ED00B4C5A0 /* SceneDelegate.swift */,
 				42BFD5FC2475F12300099454 /* FontPreview.swift */,
 				4241F7B924774B8B00BF1693 /* FooterButton.swift */,
+				42D2CA0D2480865D00BA0CAF /* MakeViewsWithTitleTextAndViewCount.swift */,
 				421B62E42478952400D53FB6 /* ConfirmButton.swift */,
 				4240D3B7247DA8DB006317D8 /* ScoreTextView.swift */,
 				4241F7A2247729BB00BF1693 /* ColorExtensions.swift */,
@@ -103,6 +108,7 @@
 				4240D3C5247DD47A006317D8 /* ProductCard.swift */,
 				4240D3C9247DE432006317D8 /* ConfirmableProductCard.swift */,
 				42E2D0F42474BA0700B4C5A0 /* FooterButtonPreviews.swift */,
+				4249A70B247F18F30006E321 /* MainMenu.swift */,
 				4240D3C1247DCD5F006317D8 /* PullingDetailScreen.swift */,
 				4240D3C3247DD035006317D8 /* PullingDetailCanceledScreen.swift */,
 				4240D3BF247DC505006317D8 /* PackingDetailScreen.swift */,
@@ -228,6 +234,7 @@
 				4241F7BA24774B8B00BF1693 /* FooterButton.swift in Sources */,
 				4240D3BA247DA956006317D8 /* TitleSubtitleSLATimingSection.swift in Sources */,
 				4240D3C6247DD47A006317D8 /* ProductCard.swift in Sources */,
+				42D2CA0E2480865D00BA0CAF /* MakeViewsWithTitleTextAndViewCount.swift in Sources */,
 				42E2D0E12474B9ED00B4C5A0 /* AppDelegate.swift in Sources */,
 				42E2D0E32474B9ED00B4C5A0 /* SceneDelegate.swift in Sources */,
 				42BFD5FD2475F12300099454 /* FontPreview.swift in Sources */,
@@ -239,6 +246,7 @@
 				4240D3C0247DC505006317D8 /* PackingDetailScreen.swift in Sources */,
 				4241F7A3247729BB00BF1693 /* ColorExtensions.swift in Sources */,
 				421B62E52478952400D53FB6 /* ConfirmButton.swift in Sources */,
+				4249A70C247F18F30006E321 /* MainMenu.swift in Sources */,
 				4240D3B8247DA8DB006317D8 /* ScoreTextView.swift in Sources */,
 				421B62E12478825300D53FB6 /* DeviceScreenSizes.swift in Sources */,
 				4240D3C8247DD71B006317D8 /* SubtitleView.swift in Sources */,
