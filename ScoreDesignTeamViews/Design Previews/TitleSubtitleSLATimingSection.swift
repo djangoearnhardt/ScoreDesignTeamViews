@@ -27,7 +27,7 @@ import SwiftUI
 struct TitleSubtitleSLATimingSection_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TitleSubtitleSLATimingSection(title: "21 min left", subtitle: "Ship from Store for \nCustomer Name", color: .textBlack)
+            TitleSubtitleSLATimingSection(title: "21 min left", subtitle: "Ship from Store for \nLebron James", color: .textBlack)
                 .padding(EdgeInsets(top: 0, leading: -120, bottom: 0, trailing: 0))
                 .frame(width: DeviceScreenSizes.iPhone8.deviceScreenSizes, height: 120)
                 .previewLayout(.sizeThatFits)
