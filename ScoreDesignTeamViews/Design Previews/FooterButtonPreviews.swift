@@ -37,7 +37,7 @@ import SwiftUI
 
 struct FooterButtonPreviews: View {
     var body: some View {
-        FooterButton(text: "Start", buttonOption: .extraLargeGreen)
+        FooterButton(text: "Start", buttonOption: .largeBlack)
     }
 }
 
