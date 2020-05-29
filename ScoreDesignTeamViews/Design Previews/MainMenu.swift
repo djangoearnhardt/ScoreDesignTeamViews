@@ -6,12 +6,26 @@
 //  Copyright © 2020 DjangoEarnhardt. All rights reserved.
 //
 
-import SwiftUI
+/*
+ 👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟
 
+How to use this file?
+
+Change the text property in line 28, by typing a word inside of the quotation marks. Change the number property in line 29 to see more TitleSubtitleActionViews, ie: 4 to 20.
+
+Change any text between quotation marks to see it changed on screen. Search for TAB 1, Tab 2, or Tab 3 to work within each tab.
+
+You need to tap the play button in the bottom right corner of the screen to use the tabs. You may need to tap the Resume button in the top right corner of this screen, if your preview does not automatically load.
+
+  👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟👟
+*/
+
+
+import SwiftUI
 
 extension MainMenu {
     public class TitleAndNumber: ObservableObject {
-        @Published var titleText: String = "Give Me Some Views"
+        @Published var titleText: String = "Show Me Some Views"
         @Published var viewCount: Int = 4
     }
 }
@@ -70,7 +84,6 @@ struct MainMenu: View {
                 Image(systemName: "1.square.fill")
                 Text("Pulling Detail Screen")
             }
-                
             
             // MARK: TAB 2
             ZStack {
@@ -114,6 +127,55 @@ struct MainMenu: View {
             .tabItem {
                 Image(systemName: "2.square.fill")
                 Text("Pulling Detail Canceled")
+            }
+            
+            //MARK: TAB 3
+            ZStack {
+            ScrollView {
+                VStack(spacing: 0) {
+                    Spacer().frame(height: 10)
+                    
+                    Image("backArrow")
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    
+                    Spacer().frame(height: 10)
+                    
+                    TitleSubtitleSLATimingSection(title: "21 min left", subtitle: "Ship from Store for \nCustomer Name", color: .textBlack).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    
+                    Spacer().frame(height: 50)
+                    
+                    VStack(spacing: 20) {
+                        MakeViewsWithTitleTextAndViewCount(titleAndNumber.titleText, titleAndNumber.viewCount) { (
+                            titleText, viewCount) in
+                            ForEach(0..<viewCount) { view in
+                                TitleSubtitleActionView(title: "Step \(view + 1)", subtitle: titleText)
+                            }
+                        }
+                    }.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading) // VStack
+                    
+                    Spacer().frame(height: 20)
+                    
+                    Group {
+                        TitleView(title: "Overview")
+                    }.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    
+                    Spacer().frame(height: 20)
+                    
+                    Group {
+                        ProductCard()
+                        Spacer().frame(height: 70)
+                    }.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading) // VStack
+                    
+                } // VStack
+                    .padding(EdgeInsets(top: 0, leading: 35, bottom: 0, trailing: 0))
+                } // ScrollView
+                
+                FooterButton(text: "Start", buttonOption: .largeBlack)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: -530, trailing: 0))
+            } // ZStack
+            .tabItem {
+                Image(systemName: "3.square.fill")
+                Text("Packing Detail Screen")
             }
         } // TabView
     } // body
